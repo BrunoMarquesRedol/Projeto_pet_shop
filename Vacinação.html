@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>Vacinação</title>
+</head>
+<body link="Blue" alink="Blue" vlink="Blue">
+<table align="center" bgcolor="Blue " border="1" width="1900" >
+         <tr bgcolor="#FFD700"><td><center><font color="Blue" face="Verdana" size="7"><b>VACINAÇÃO</b></center></font></td></tr>
+      </table><center><br><br>
+      	 <font color="Blue" size="7" face="Verdana">
+      <a href="contato.html" style="text-decoration: none;"><b>contato</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="Adote.html" style="text-decoration: none;"><b>Adote</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="Paginainicial.html" style="text-decoration: none;"><b>Pagina Inicial</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="Produtos.html" style="text-decoration: none;"><b>Produtos</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <br><br>
+
+      <img src="campanha-vacinacao.png">
+<font size="6">
+<head>
+  <title>Vacinação</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .vaccination-list {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #FFD700;
+      font-weight: bold;
+    }
+
+    .selected {
+      background-color: #FFD700;
+      color: white;
+    }
+
+    .submit-button {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    function selectVaccine(element) {
+      var rows = document.querySelectorAll(".vaccine-row");
+
+      for (var i = 0; i < rows.length; i++) {
+        rows[i].classList.remove("selected");
+      }
+
+      element.classList.add("selected");
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Escolha sua Vacina</h1>
+
+  <div class="vaccination-list">
+    <table>
+      <tr>
+        <th>Vacina</th>
+        <th>Data</th>
+      </tr>
+      <tr class="vaccine-row" onclick="selectVaccine(this)">
+        <td>Vacina A</td>
+        <td>01/01/2023</td>
+      </tr>
+      <tr class="vaccine-row" onclick="selectVaccine(this)">
+        <td>Vacina B</td>
+        <td>15/02/2023</td>
+      </tr>
+      <tr class="vaccine-row" onclick="selectVaccine(this)">
+        <td>Vacina C</td>
+        <td>05/03/2023</td>
+      </tr>
+      <tr class="vaccine-row" onclick="selectVaccine(this)">
+        <td>Vacina D</td>
+        <td>22/04/2023</td>
+      </tr>
+    </table>
+
+    <div class="submit-button">
+      <button type="submit">Enviar</button>
+    </div>
+  </div>
+   </font>
+</body>
+
+</html>
